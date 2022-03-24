@@ -1,0 +1,14 @@
+{
+  "name": "autoemailer",
+  "version": "1.0.0",
+  "description": "emails a template to multiple addresses",
+  "main": "autoemailer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pedro Ribeiro",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^6.7.3"
+  }
+}
