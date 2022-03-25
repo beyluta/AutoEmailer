@@ -6,7 +6,6 @@ const readline = require("readline").createInterface({
 });
 let email, password, subject, body, receivers;
 let transporter, mailOptions;
-const delay = 0;
 
 readline.question("Email: ", (answer) => {
   email = answer;
@@ -30,9 +29,6 @@ readline.question("Email: ", (answer) => {
 });
 
 function sendEmail() {
-  console.log(
-    `Emails will be sent in ${delay} seconds. Press and hold CTRL+ C to cancel`
-  );
   receivers.split(",").forEach((receiver) => {
     transporter = nodemailer.createTransport({
       service: "gmail",
